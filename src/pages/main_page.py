@@ -12,7 +12,7 @@ class MainPage(BasePage):
     def accept_cookies(self):
         with allure.step(f'Accept cookie on main page'):
             try:
-                self.find_element(MPL.cookie_button).click()
+                self.find_element(MPL.COOKIE_BUTTON).click()
             except:
                 pass
 
